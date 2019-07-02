@@ -27,6 +27,8 @@ If the customer attempts to purchase a product quantity which is larger than the
 ![Unsuccessful Purchase](https://i.imgur.com/ofWmey3.png)
 
 
+
+------------------------------------------------------
 ## Instructions
 
 ### Challenge #1: Customer View (Minimum Requirement)
