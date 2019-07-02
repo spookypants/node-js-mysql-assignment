@@ -10,21 +10,21 @@ This application simulates a basic online story inventory interface which allows
 
 Upon initilizing the application inside the terminal with the command "node bamazonCustomer.js", the customer is presented with the current store inventory, which includes the product name, price, and currently available purchasble quantity.
 
-![Initial App Image](https://imgur.com/loDWagV)
+![Initial App Image](https://i.imgur.com/loDWagV.png)
 
 Products are automatically assigned unique item ID numbers, and after browsing through the current store inventory, the customer is then prompted to enter the unique item ID number corresponding to the product which they would like to purchase. The customer is then prompted for how many units of the product which they would like to purchase.
 
-![Purchasing Prompt](https://imgur.com/tIwdAhg)
+![Purchasing Prompt](https://i.imgur.com/tIwdAhg.png)
 
 If the amount of units which the customer enters is less than or equal to the current inventory value of the selected product, the customer's inputted value is then subtracted from the available product quantity and the new total is updated within the MySQL database.
 
 The customer is then shown a message confirming their purchase, and they are then prompted to continue shopping or leave the storefront.
 
-![Successful Purchase](https://imgur.com/THDQ4HH)
+![Successful Purchase](https://i.imgur.com/THDQ4HH.png)
 
 If the customer attempts to purchase a product quantity which is larger than the current product inventory, an insufficient quantity prompt is populated and the customer is returned to the initial storefront prompt.
 
-![Unsuccessful Purchase](https://imgur.com/ofWmey3)
+![Unsuccessful Purchase](https://i.imgur.com/ofWmey3.png)
 
 
 ## Instructions
