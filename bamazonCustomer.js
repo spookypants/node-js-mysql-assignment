@@ -40,10 +40,10 @@ var reinitializePrompt = {
 // Display inventory
 var displayInventory = function(){
     connection.query("SELECT * FROM products", function(err,res){
-        console.log("DISPLAYING INVENTORY:" + "\n" + "--------------------");
+        console.log("DISPLAYING INVENTORY:" + "\n" + "------------------------------");
         for (var i=0; i < res.length; i++) {
             console.log("Item ID: " + res[i].item_id + "\n" + "Product Name: " + res[i].product_name + "\n" 
-            + "Price: " + res[i].price + "\n" + "Quantity Available: " + res[i].stock_quantity + "\n--------------------");
+            + "Price: " + res[i].price + "\n" + "Quantity Available: " + res[i].stock_quantity + "\n------------------------------");
         }
         promptCustomer(res);
     })
