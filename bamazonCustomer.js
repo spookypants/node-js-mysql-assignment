@@ -7,7 +7,7 @@ var connection = mysql.createConnection({
     host: "localhost",
     port: 3306,
     user: "root",
-    password: process.env.DB_PASSWORD,
+    password: "h3lpc0mput3r",
     database: "bamazon_db"  
 });
 
@@ -69,7 +69,7 @@ var promptCustomer = function(res){
                                 connection.end();
                             }
                             console.log("Product(s) purchase!" + "\n" + "Total Transaction Cost: $" + totalCost);
-                            inquirer.prompt([restartPrompt]).then(function(inquirerResponse){
+                            inquirer.prompt([reinitializePrompt]).then(function(inquirerResponse){
                                 if (inquirerResponse.restart_prompt === "Yes") {
                                     displayInventory();
                                 } else {
